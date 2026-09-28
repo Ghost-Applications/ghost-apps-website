@@ -1,0 +1,16 @@
+---
+layout: layouts/base.njk
+---
+<article>
+  <h1>{{ title }}</h1>
+  <p class="text-sm text-gray-400">
+    {{ date | postDate }}{% if author %} &middot; {{ author }}{% endif %}
+  </p>
+  {% if featured_image %}
+  <figure>
+    <img src="{{ featured_image | url }}" alt="">
+    {% if featured_image_caption %}<figcaption>{{ featured_image_caption }}</figcaption>{% endif %}
+  </figure>
+  {% endif %}
+  {{ content | safe }}
+</article>
