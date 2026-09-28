@@ -3,6 +3,8 @@ layout: layouts/base.njk
 title: Ghost Apps
 ---
 
+<img class="w-32" src="/images/ghost_applications_icon.png" alt="Ghost Apps logo">
+
 # Ghost Apps
 
 Small, independent software — built with care, shipped without ceremony.
